@@ -1,0 +1,42 @@
+# General
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.log
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+backend/.env
+backend/venv/
+
+# Node / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+dist/
+build/
+coverage/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Ignore all .env files...
+.env*
+# ...but allow the example template
+!.env.example
+frontend/sampler-app/.env
+frontend/sampler-app/node_modules/
+reproduce_error.py
+backend/.env.example
