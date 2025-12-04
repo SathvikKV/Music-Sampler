@@ -42,7 +42,7 @@ A robust **FastAPI** service that acts as the orchestration layer.
 -   **Spotify Integration**: Seamlessly connect your Spotify account to save tracks and manage playlists.
 -   **Smart Playlists**: Create and manage playlists with AI assistance.
 
-## 🏁 Getting Started
+##  Getting Started
 
 ### Prerequisites
 -   Docker & Docker Compose
@@ -82,6 +82,4 @@ A robust **FastAPI** service that acts as the orchestration layer.
 5.  **Explore**
     -   Open [http://localhost:3000](http://localhost:3000) to start discovering music.
 
-## 📝 License
 
-MIT
