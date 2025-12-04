@@ -1,55 +1,120 @@
-# Music Sampler & Discovery App
+# Music Sampler and Discovery App
 
-A modern, AI-powered music discovery application that reimagines how users explore, curate, and analyze music. By combining a "TikTok-style" vertical feed with deep LLM analysis, Sampler offers a rich, immersive experience for music lovers.
+A modern AI-powered music discovery application that reimagines how users explore, curate, and analyze music. Sampler blends a TikTok-style vertical feed with deep LLM analysis and Spotify integration to create an immersive and intelligent music exploration experience.
 
-## otivation (Why?)
+---
 
-Music discovery has become stagnant. While streaming services offer algorithmic playlists, they often lack context and interactivity. Users want to know *why* a song is recommended, understand the lyrics, and explore the artist's background without leaving the app.
+## Motivation (Why?)
 
-**Sampler** bridges this gap by:
-1.  **Visualizing Discovery**: Using a vertical, swipeable feed for rapid exploration.
-2.  **Contextualizing Music**: Leveraging AI to provide "Behind the Lyrics" insights and "Vibe Checks" for playlists.
-3.  **Unifying Platforms**: Integrating with Spotify to make discovery actionable—save tracks and build playlists instantly.
+Music discovery today often feels passive. Streaming platforms recommend songs, but they rarely explain *why*. Listeners want context, emotion, and insight. They want to explore music the way they browse social media: fast, visual, and interactive.
 
-##  Architecture & Tech Stack
+**Sampler** fills this gap by:
 
-The application is built as a modern, full-stack microservices-lite architecture, designed for performance, scalability, and developer experience.
+1. **Visualizing Discovery**  
+   A vertical, swipeable feed makes exploring new tracks feel intuitive and fun.
+
+2. **Contextualizing Music**  
+   AI-powered insights offer behind-the-lyrics explanations, artist context, and sonic breakdowns.
+
+3. **Unifying Platforms**  
+   Spotify integration makes discovery actionable. Save tracks or build playlists instantly.
+
+---
+
+## Preview
+
+### Home Screen  
+<img src="images/home.PNG" width="500">
+
+### Home Scroll  
+<img src="images/home_2.PNG" width="500">
+
+### Interactive Feed  
+<img src="images/feed.PNG" width="500">
+
+### Playlist View  
+<img src="images/playlist.PNG" width="500">
+
+### Playlist Analysis  
+<img src="images/playlist_2.PNG" width="500">
+
+---
+
+## Architecture and Tech Stack
+
+Sampler is built as a modern, full-stack microservices-lite system designed for speed, scalability, and clean developer experience.
+
+---
 
 ### Frontend (Client)
-Built with **Next.js 15 (App Router)** and **React 19**, focusing on a fluid, app-like experience.
--   **Styling**: Tailwind CSS v4 for a high-performance, utility-first design system.
--   **State Management**: `zustand` for global client state (player, playlist context) and `tanstack-query` for server state management.
--   **UI Components**: Radix UI primitives for accessibility, styled with a custom design system.
--   **Media**: `react-youtube` and Spotify Web Playback SDK for seamless audio/video streaming.
+
+Built with **Next.js 15 (App Router)** and **React 19** for a smooth, app-like experience.
+
+- **Styling**: Tailwind CSS v4  
+- **State Management**:  
+  - `zustand` for lightweight global UI state  
+  - `@tanstack/react-query` for server state  
+- **UI Components**: Radix UI primitives with a custom design system  
+- **Media**:  
+  - `react-youtube` for video previews  
+  - Spotify Web Playback SDK for audio playback  
+
+---
 
 ### Backend (Server)
-A robust **FastAPI** service that acts as the orchestration layer.
--   **API Layer**: FastAPI (Python 3.11+) with async endpoints for high concurrency.
--   **Database**: PostgreSQL with `asyncpg` and `SQLAlchemy` (Async ORM) for reliable data persistence.
--   **Caching**: Redis for session management, auth tokens, and ephemeral feed data.
--   **AI Engine**: Integration with OpenAI (GPT-4o) for content analysis and Tavily for real-time web search context.
 
-### Infrastructure
--   **Containerization**: Docker & Docker Compose for consistent development and deployment environments.
--   **Migrations**: Alembic for database schema management.
+A high-performance **FastAPI** service that orchestrates feed generation, playlist analysis, and AI workflows.
 
-##  Features
+- **API Framework**: FastAPI (async)  
+- **Database**: PostgreSQL with SQLAlchemy Async ORM  
+- **Caching and Sessions**: Redis  
+- **AI Engine**:  
+  - OpenAI GPT-4o for track insights, playlist vibe analysis, lyric summaries  
+  - Tavily Search for real-time context  
 
--   **Interactive Feed**: Swipe through track previews with a rich, immersive UI.
--   **AI-Powered Analysis**:
-    -   **Track Explanations**: Get real-time artist news and deep sonic analysis.
-    -   **Playlist Vibe Check**: Analyze the mood, consistency, and best-use cases for your playlists.
--   **Spotify Integration**: Seamlessly connect your Spotify account to save tracks and manage playlists.
--   **Smart Playlists**: Create and manage playlists with AI assistance.
+---
 
-##  Getting Started
+## Infrastructure
+
+- **Containerization**: Docker and Docker Compose  
+- **Database Migrations**: Alembic  
+- **Environment Management**: `.env` files for API keys and credentials  
+
+---
+
+## Features
+
+### Interactive Music Feed
+- Swipe through track previews  
+- Instant loading via prefetch and caching  
+- Song metadata, visual elements, and integrated audio  
+
+### AI-Powered Music Analysis
+- **Track Explanations**: Understand themes, sonic details, artist background  
+- **Playlist Vibe Check**: Summaries, use-cases, mood analysis  
+
+### Spotify Integration
+- Authenticate with your Spotify account  
+- Save tracks  
+- Create playlists  
+- Manage playlist content directly from the app  
+
+### Smart Playlists
+- Automatically generate playlists based on mood, genre, or AI criteria  
+
+---
+
+## Getting Started
 
 ### Prerequisites
--   Docker & Docker Compose
--   Node.js 20+ & pnpm
--   Python 3.11+
--   Spotify Developer Credentials
--   OpenAI & Tavily API Keys
+
+- Docker and Docker Compose  
+- Node.js 20+ and pnpm  
+- Python 3.11+  
+- Spotify Developer Credentials  
+- OpenAI and Tavily API keys  
+
+---
 
 ### Installation
 
