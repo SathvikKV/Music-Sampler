@@ -27,10 +27,10 @@ Music discovery today often feels passive. Streaming platforms recommend songs, 
 <img src="images/home.PNG" width="500">
 
 ### Home Scroll  
-<img src="images/home_2.PNG" width="500">
-
-### Interactive Feed  
 <img src="images/feed.PNG" width="500">
+
+### Feed Card Analysis  
+<img src="images/home_2.PNG" width="500">
 
 ### Playlist View  
 <img src="images/playlist.PNG" width="500">
